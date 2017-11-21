@@ -1,0 +1,50 @@
+body{
+    background: lightcyan
+}
+#div1{
+    background-color: palegreen;
+    height: 65px;
+    width :60%;
+}
+#div2{
+   
+    background-color : palegreen;
+    height: 230px;
+    width :40%;
+}
+#div3{
+    
+     background-color : palevioletred;
+     height: 230px;
+     width :40%;
+ }
+div{
+    text-align: center;
+    align-self: center;
+    display: block;
+}
+h1{
+    color: grey;
+    text-align: center;
+}
+button{
+    background-color: powderblue;
+    border-radius: 4px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+input{
+   text-align: center;
+}
+form{
+    text-align: center;
+}
+table{
+    width: 100%;
+}
+th{
+    color: gray;
+}
+td{
+    color: gray;
+}
