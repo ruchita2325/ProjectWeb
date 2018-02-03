@@ -51,9 +51,9 @@ edit=()=>
     let ii=document.getElementById("e_id").value;
     let n=document.getElementById("e_name").value;
     let c=document.getElementById("e_course").value;
-    let table=document.getElementById("table");
+    let table=document.getElementById("tablemain");
     let cb=table.getElementsByClassName("cb");
-    for(var i=0;i<=cb.length;i++)
+    for(var i=0;i<cb.length;i++)
     {
         if(cb[i].checked)
         {
@@ -62,7 +62,7 @@ edit=()=>
             t+=`<td><input class="cb" type='checkbox' /></td><td> ${ii} </td><td> ${n} </td><td> ${c} </td>";
             tr.innerHTML=t;
             
-            table.replaceChild(tr,table.childNodes[i]); 
+            table.replaceChild(tr,table.childNodes[i+1]); 
         }
     }
 }
