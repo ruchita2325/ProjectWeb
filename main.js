@@ -26,7 +26,7 @@ add=()=>
     let table=document.getElementById("table");
     let tr=document.createElement("tr");
     let t=" ";
-    t+=`<td><input class="cb" type='checkbox' /></td><td> ${i} </td><td> ${n} </td><td> ${c} </td>";
+    t+=`<td><input class="cb" type='checkbox' /></td><td> ${i} </td><td> ${n} </td><td> ${c} </td>`;
     tr.innerHTML=t;
     table.appendChild(tr);
 }
@@ -59,7 +59,7 @@ edit=()=>
         {
             var tr=document.createElement("tr");
             var t=" ";
-            t+=`<td><input class="cb" type='checkbox' /></td><td> ${ii} </td><td> ${n} </td><td> ${c} </td>";
+            t+=`<td><input class="cb" type='checkbox' /></td><td> ${ii} </td><td> ${n} </td><td> ${c} </td> `;
             tr.innerHTML=t;
             
             table.replaceChild(tr,table.childNodes[i]); 
