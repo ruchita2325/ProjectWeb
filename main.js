@@ -18,7 +18,7 @@ $(document).ready(function(){
         $("#div2").hide();
     });
 });
-sub=()=>
+add=()=>
 {
     let i=document.getElementById("id").value;
     let n=document.getElementById("name").value;
