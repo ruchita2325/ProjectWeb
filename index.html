@@ -4,76 +4,106 @@
         
         <script src="jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="main.js"></script> 
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="bootstrap.min.js"></script>
         <script src="bootstrap.js"></script>
     </head>
     <body>
-        <h1>Student Details</h1>
-        <br>
-       <center> <div id=div1><br>
-            <button type="button" id="b1">ADD</button>
-            <button type="button" id="b2" onclick="del()">DELETE</button>
-            <button type="button" id="b3">EDIT</button>
-        </div></center>
-        <br>
-        <br>
-        <center><div id=div2>
-                <form id="f1">
-                    <br><br><br>
-                    <center>ID : 
-                    <input type="text" id="id"><br><br>
-                    Name : 
-                    <input type="text" id="name" ><br><br>
-                    Course : 
-                    <input type="text" id="course"><br><br>
-                    <button type="button" onclick=sub() >SUBMIT</button></center>
-                </form>
-            </div></center><br>
-            <center><div id=div3>
-                <form id="f1">
-                    <br><br><br>
-                    <center>ID : 
-                    <input type="text" id="e_id"><br><br>
-                    Name : 
-                    <input type="text" id="e_name" ><br><br>
-                    Course : 
-                    <input type="text" id="e_course"><br><br>
-                    <button type="button" onclick=edit()>EDIT</button></center>
-                </form>
-            </div></center><br>
-            <div>
-                <table id="table">
-                    <tr>
-                        <th >
-                            
-                        </th>
-                        <th>
-                            ID
-                        </th>
-                        <th>
-                            NAME
-                        </th>
-                        <th>
-                            COURSE
-                        </th>
-                    </tr>
-                    <tr>
-                        <td >
-                            <input class='cb' type='checkbox' />
-                        </td>
-                        <td>
-                            12
-                        </td>
-                        <td>
-                            RUCHITA
-                        </td>
-                        <td>
-                            CSE
-                        </td>
-                    </tr>
+        <div class="conainer">
+        <div class="mx-auto" class=row>
+            <div class=col-md-12>
+                <center>
+                    <h1>Student Details</h1>
+                </center>
+            </div>
+        </div>
+        <div class="mx-auto" class="row">
+            <div class="col-md-12">
+                <div class="form-group" id="div1">
+                    <button class="btn btn-default" id="b1">ADD</button>
+                    <button class="btn btn-default" id="b2" onclick="delete_func()">DELETE</button>
+                    <button class="btn btn-default" id="b3">EDIT</button>
+                </div>
+            </div>
+        </div>
+        <div class="mx-auto" class="row" id="div11">
+            <form>
+                <div class="col-md-12" id="div12">
+                    <div class="form-group" id="div2">
+                        <label class="inputlg">ID</label>
+                        <input class="form-control input-lg" type="text" id="id">
+                        <label class="inputlg">Name</label>
+                        <input class="form-control input-lg" type="text" id="name">
+                        <label class="inputlg">Course</label>
+                        <input class="form-control input-lg" type="text" id="course">
+                        <button class="btn btn-default" onclick="add()">SUBMIT</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="mx-auto" class="row">
+            <form>
+                <div class="col-md-12">
+                    <div class="form-group" id="div3">
+                        <label class="inputlg">ID</label>
+                        <input class="form-control input-lg" type="text" id="e_id">
+                        <label class="inputlg">Name</label>
+                        <input class="form-control input-lg" type="text" id="e_name">
+                        <label class="inputlg">Course</label>
+                        <input class="form-control input-lg" type="text" id="e_course">
+                        <button class="btn btn-default" onclick="edit()">EDIT</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="mx-auto" class="row">
+            <div class="col-md-12>">
+                <table id="table" class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>ID</th>
+                            <th>NAME</th>
+                            <th>COURSE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablebody">
+                        <tr>
+                            <td>
+                                <input class="cb" type='checkbox' />
+                            </td>
+                            <td>12</td>
+                            <td>RUCHITA</td>
+                            <td>CSE</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="cb" type='checkbox' />
+                            </td>
+                            <td>15</td>
+                            <td>ROHAN</td>
+                            <td>CSE</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="cb" type='checkbox' />
+                            </td>
+                            <td>17</td>
+                            <td>RIYA</td>
+                            <td>CSE</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="cb" type='checkbox' />
+                            </td>
+                            <td>12</td>
+                            <td>RUCHITA</td>
+                            <td>CSE</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
-            
+        </div>
+    </div>
     </body>
 </html>
