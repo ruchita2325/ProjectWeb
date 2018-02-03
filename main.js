@@ -18,7 +18,7 @@ $(document).ready(function(){
         $("#div2").hide();
     });
 });
-var add=()=>
+sub=()=>
 {
     let i=document.getElementById("id").value;
     let n=document.getElementById("name").value;
@@ -30,11 +30,8 @@ var add=()=>
     tr.innerHTML=t;
     table.appendChild(tr);
 }
-function sub()
-{
-    add();
-}
-var d=()=>
+
+del=()=>
 {
     let table=document.getElementById("table"); 
     let cb=table.getElementsByClassName("cb");
@@ -48,11 +45,8 @@ var d=()=>
         }
     } 
 }
-function del()
-{
-    d();
-}
-var ed=()=>
+
+edit=()=>
 {
     let ii=document.getElementById("e_id").value;
     let n=document.getElementById("e_name").value;
@@ -71,8 +65,4 @@ var ed=()=>
             table.replaceChild(tr,table.childNodes[i+1]); 
         }
     }
-}
-function edit()
-{
-    ed();
 }
